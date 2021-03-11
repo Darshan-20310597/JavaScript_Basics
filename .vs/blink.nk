@@ -1,0 +1,12 @@
+kernel EqualsTo: ImageComputationKernel<ePixelWise> {
+  Image<eRead, eAccessPoint, eEdgeClamped> src; // the input image (binary)
+  Image<eRead, eAccessPoint, eEdgeClamped> i_energy; // the reference image
+  Image<eWrite> dst; // the output image
+  
+  // pos gives the position of the kernel in the output image
+  void process(int2 pos) {
+      
+
+    dst() = sample;
+  }
+};
